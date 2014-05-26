@@ -1,0 +1,43 @@
+
+@media (min-width:768px) {
+
+  .menu-separator {
+    height: 10px;
+    width: 50px;
+  }
+}
+
+
+header {
+  margin-top: -$top-space;
+  padding: 0;
+  border-bottom: 1px solid #e7e7e7;
+  background: $header-bg-color;
+  font-size: $header-ft-size;
+  @include box-shadow(rgba(0,0,0,.08) 0 2px 5px);
+}
+@media only screen and (min-width: 768px) {
+  header.affix {
+    width: 100%;
+  }
+}
+
+header.navbar {
+  margin-bottom: 0;
+}
+.navbar-nav>li>a.brand-link { 
+  padding: 0;
+}
+header, header a {
+  color: $header-txt-color;
+}
+.navbar-toggle .icon-bar {
+  background-color: $header-txt-color;
+}
+.navbar-nav > li.me {
+  font-weight: bold;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+}
